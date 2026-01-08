@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0412BA852F0ECD360012B4F6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040CAA112F0D189800F7D78C /* WidgetKit.framework */; };
+		0412BA862F0ECD360012B4F6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040CAA132F0D189800F7D78C /* SwiftUI.framework */; };
+		0412BA912F0ECD380012B4F6 /* TripActivityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0412BA842F0ECD360012B4F6 /* TripActivityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A001 /* SmartArrivalAlertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501 /* SmartArrivalAlertApp.swift */; };
+		A002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502 /* ContentView.swift */; };
+		M001 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001 /* Location.swift */; };
+		M002 /* MonitoringStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002 /* MonitoringStatus.swift */; };
+		M003 /* RiskAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003 /* RiskAssessment.swift */; };
+		M004 /* SignalQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004 /* SignalQuality.swift */; };
+		M005 /* StorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005 /* StorageKeys.swift */; };
+		M006 /* TripRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006 /* TripRecord.swift */; };
+		M007 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007 /* UserSettings.swift */; };
+		M008 /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008 /* MapModels.swift */; };
+		M009 /* TransportMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009 /* TransportMode.swift */; };
+		M010 /* GeofenceRadiusConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010 /* GeofenceRadiusConfig.swift */; };
+		M011 /* BatteryMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011 /* BatteryMode.swift */; };
+		M012 /* RouteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012 /* RouteModels.swift */; };
+		M013 /* AlertModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013 /* AlertModels.swift */; };
+		R001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F601 /* Assets.xcassets */; };
+		S001 /* AlertTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101 /* AlertTrigger.swift */; };
+		S002 /* DataExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102 /* DataExportService.swift */; };
+		S003 /* LearningEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103 /* LearningEngine.swift */; };
+		S004 /* LocalStorageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104 /* LocalStorageAdapter.swift */; };
+		S005 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105 /* LocationRepository.swift */; };
+		S006 /* LocationSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F106 /* LocationSearchService.swift */; };
+		S007 /* MonitoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107 /* MonitoringEngine.swift */; };
+		S008 /* SelfDiagnosisEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F108 /* SelfDiagnosisEngine.swift */; };
+		S009 /* SignalQualityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109 /* SignalQualityRepository.swift */; };
+		S010 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110 /* TripRepository.swift */; };
+		S011 /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111 /* GeocodingService.swift */; };
+		S012 /* ETACalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F112 /* ETACalculator.swift */; };
+		S013 /* MapStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113 /* MapStyleManager.swift */; };
+		S014 /* LocationCheckIntervalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114 /* LocationCheckIntervalManager.swift */; };
+		S015 /* SpeedCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115 /* SpeedCalculator.swift */; };
+		S016 /* EnhancedETACalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116 /* EnhancedETACalculator.swift */; };
+		S017 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117 /* SettingsStore.swift */; };
+		S018 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118 /* LiveActivityManager.swift */; };
+		S019 /* RouteETAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119 /* RouteETAService.swift */; };
+		S020 /* RefreshIntervalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120 /* RefreshIntervalCalculator.swift */; };
+		S021 /* AlertSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121 /* AlertSoundPlayer.swift */; };
+		S022 /* AlertHapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122 /* AlertHapticEngine.swift */; };
+		S023 /* SnoozeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123 /* SnoozeTimer.swift */; };
+		S024 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124 /* AlertManager.swift */; };
+		S025 /* BatteryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125 /* BatteryMonitor.swift */; };
+		S026 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F126 /* HapticManager.swift */; };
+		U001 /* GeoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F201 /* GeoUtils.swift */; };
+		U002 /* SignalQualityEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202 /* SignalQualityEvaluator.swift */; };
+		U003 /* TransportModeSwipeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203 /* TransportModeSwipeHandler.swift */; };
+		U004 /* RouteValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204 /* RouteValidator.swift */; };
+		U005 /* AnimationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205 /* AnimationConstants.swift */; };
+		V001 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F301 /* HomeViewModel.swift */; };
+		V002 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F302 /* MapViewModel.swift */; };
+		V003 /* RouteSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303 /* RouteSelectionViewModel.swift */; };
+		V004 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304 /* AlertViewModel.swift */; };
+		W001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F401 /* HomeView.swift */; };
+		W003 /* MapViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403 /* MapViews.swift */; };
+		W004 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404 /* SettingsView.swift */; };
+		W005 /* RouteListPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405 /* RouteListPanel.swift */; };
+		W006 /* RouteSelectionMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F406 /* RouteSelectionMapView.swift */; };
+		W007 /* SwipeableTransportModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F407 /* SwipeableTransportModeSelector.swift */; };
+		W008 /* ArrivalAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408 /* ArrivalAlertView.swift */; };
+		W009 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F409 /* ButtonStyles.swift */; };
+		W010 /* AppBrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F410 /* AppBrandView.swift */; };
+		W011 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411 /* LaunchView.swift */; };
+		W012 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412 /* AboutView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0412BA8F2F0ECD380012B4F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PROJECT /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0412BA832F0ECD360012B4F6;
+			remoteInfo = TripActivityWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		040CAA262F0D189900F7D78C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0412BA912F0ECD380012B4F6 /* TripActivityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		040CAA112F0D189800F7D78C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		040CAA132F0D189800F7D78C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0412BA842F0ECD360012B4F6 /* TripActivityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TripActivityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F001 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F002 /* MonitoringStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringStatus.swift; sourceTree = "<group>"; };
+		F003 /* RiskAssessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssessment.swift; sourceTree = "<group>"; };
+		F004 /* SignalQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalQuality.swift; sourceTree = "<group>"; };
+		F005 /* StorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKeys.swift; sourceTree = "<group>"; };
+		F006 /* TripRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRecord.swift; sourceTree = "<group>"; };
+		F007 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		F008 /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		F009 /* TransportMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportMode.swift; sourceTree = "<group>"; };
+		F010 /* GeofenceRadiusConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceRadiusConfig.swift; sourceTree = "<group>"; };
+		F011 /* BatteryMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryMode.swift; sourceTree = "<group>"; };
+		F012 /* RouteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModels.swift; sourceTree = "<group>"; };
+		F013 /* AlertModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModels.swift; sourceTree = "<group>"; };
+		F101 /* AlertTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTrigger.swift; sourceTree = "<group>"; };
+		F102 /* DataExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExportService.swift; sourceTree = "<group>"; };
+		F103 /* LearningEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningEngine.swift; sourceTree = "<group>"; };
+		F104 /* LocalStorageAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageAdapter.swift; sourceTree = "<group>"; };
+		F105 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		F106 /* LocationSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchService.swift; sourceTree = "<group>"; };
+		F107 /* MonitoringEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringEngine.swift; sourceTree = "<group>"; };
+		F108 /* SelfDiagnosisEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfDiagnosisEngine.swift; sourceTree = "<group>"; };
+		F109 /* SignalQualityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalQualityRepository.swift; sourceTree = "<group>"; };
+		F110 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
+		F111 /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
+		F112 /* ETACalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETACalculator.swift; sourceTree = "<group>"; };
+		F113 /* MapStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyleManager.swift; sourceTree = "<group>"; };
+		F114 /* LocationCheckIntervalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCheckIntervalManager.swift; sourceTree = "<group>"; };
+		F115 /* SpeedCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedCalculator.swift; sourceTree = "<group>"; };
+		F116 /* EnhancedETACalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedETACalculator.swift; sourceTree = "<group>"; };
+		F117 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		F118 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		F119 /* RouteETAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteETAService.swift; sourceTree = "<group>"; };
+		F120 /* RefreshIntervalCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshIntervalCalculator.swift; sourceTree = "<group>"; };
+		F121 /* AlertSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSoundPlayer.swift; sourceTree = "<group>"; };
+		F122 /* AlertHapticEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHapticEngine.swift; sourceTree = "<group>"; };
+		F123 /* SnoozeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeTimer.swift; sourceTree = "<group>"; };
+		F124 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		F125 /* BatteryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryMonitor.swift; sourceTree = "<group>"; };
+		F126 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		F201 /* GeoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUtils.swift; sourceTree = "<group>"; };
+		F202 /* SignalQualityEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalQualityEvaluator.swift; sourceTree = "<group>"; };
+		F203 /* TransportModeSwipeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportModeSwipeHandler.swift; sourceTree = "<group>"; };
+		F204 /* RouteValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteValidator.swift; sourceTree = "<group>"; };
+		F205 /* AnimationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConstants.swift; sourceTree = "<group>"; };
+		F301 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F302 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F303 /* RouteSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSelectionViewModel.swift; sourceTree = "<group>"; };
+		F304 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		F401 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F403 /* MapViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViews.swift; sourceTree = "<group>"; };
+		F404 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F405 /* RouteListPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListPanel.swift; sourceTree = "<group>"; };
+		F406 /* RouteSelectionMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSelectionMapView.swift; sourceTree = "<group>"; };
+		F407 /* SwipeableTransportModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableTransportModeSelector.swift; sourceTree = "<group>"; };
+		F408 /* ArrivalAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalAlertView.swift; sourceTree = "<group>"; };
+		F409 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		F410 /* AppBrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBrandView.swift; sourceTree = "<group>"; };
+		F411 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		F412 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F501 /* SmartArrivalAlertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartArrivalAlertApp.swift; sourceTree = "<group>"; };
+		F502 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F601 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		P001 /* SmartArrivalAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartArrivalAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0412BA942F0ECD380012B4F6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0412BA832F0ECD360012B4F6 /* TripActivityWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0412BA872F0ECD360012B4F6 /* TripActivityWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (0412BA942F0ECD380012B4F6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = TripActivityWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0412BA812F0ECD360012B4F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0412BA862F0ECD360012B4F6 /* SwiftUI.framework in Frameworks */,
+				0412BA852F0ECD360012B4F6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FRAMEWORKS /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040CAA102F0D189800F7D78C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040CAA112F0D189800F7D78C /* WidgetKit.framework */,
+				040CAA132F0D189800F7D78C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		MODELS /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F013 /* AlertModels.swift */,
+				F001 /* Location.swift */,
+				F008 /* MapModels.swift */,
+				F002 /* MonitoringStatus.swift */,
+				F003 /* RiskAssessment.swift */,
+				F004 /* SignalQuality.swift */,
+				F005 /* StorageKeys.swift */,
+				F009 /* TransportMode.swift */,
+				F010 /* GeofenceRadiusConfig.swift */,
+				F011 /* BatteryMode.swift */,
+				F012 /* RouteModels.swift */,
+				F006 /* TripRecord.swift */,
+				F007 /* UserSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		PRODUCTS /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				P001 /* SmartArrivalAlert.app */,
+				0412BA842F0ECD360012B4F6 /* TripActivityWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ROOT = {
+			isa = PBXGroup;
+			children = (
+				SRCGROUP /* SmartArrivalAlert */,
+				0412BA872F0ECD360012B4F6 /* TripActivityWidget */,
+				040CAA102F0D189800F7D78C /* Frameworks */,
+				PRODUCTS /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		SERVICES /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F124 /* AlertManager.swift */,
+				F122 /* AlertHapticEngine.swift */,
+				F121 /* AlertSoundPlayer.swift */,
+				F101 /* AlertTrigger.swift */,
+				F125 /* BatteryMonitor.swift */,
+				F102 /* DataExportService.swift */,
+				F112 /* ETACalculator.swift */,
+				F111 /* GeocodingService.swift */,
+				F126 /* HapticManager.swift */,
+				F103 /* LearningEngine.swift */,
+				F104 /* LocalStorageAdapter.swift */,
+				F105 /* LocationRepository.swift */,
+				F106 /* LocationSearchService.swift */,
+				F113 /* MapStyleManager.swift */,
+				F114 /* LocationCheckIntervalManager.swift */,
+				F115 /* SpeedCalculator.swift */,
+				F116 /* EnhancedETACalculator.swift */,
+				F117 /* SettingsStore.swift */,
+				F118 /* LiveActivityManager.swift */,
+				F119 /* RouteETAService.swift */,
+				F120 /* RefreshIntervalCalculator.swift */,
+				F107 /* MonitoringEngine.swift */,
+				F108 /* SelfDiagnosisEngine.swift */,
+				F109 /* SignalQualityRepository.swift */,
+				F123 /* SnoozeTimer.swift */,
+				F110 /* TripRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		SRCGROUP /* SmartArrivalAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F501 /* SmartArrivalAlertApp.swift */,
+				F502 /* ContentView.swift */,
+				F503 /* Info.plist */,
+				F601 /* Assets.xcassets */,
+				MODELS /* Models */,
+				SERVICES /* Services */,
+				UTILITIES /* Utilities */,
+				VIEWMODELS /* ViewModels */,
+				VIEWS /* Views */,
+			);
+			path = SmartArrivalAlert;
+			sourceTree = "<group>";
+		};
+		UTILITIES /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F205 /* AnimationConstants.swift */,
+				F201 /* GeoUtils.swift */,
+				F202 /* SignalQualityEvaluator.swift */,
+				F203 /* TransportModeSwipeHandler.swift */,
+				F204 /* RouteValidator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		VIEWMODELS /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F304 /* AlertViewModel.swift */,
+				F301 /* HomeViewModel.swift */,
+				F302 /* MapViewModel.swift */,
+				F303 /* RouteSelectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		VIEWS /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				VIEWSCOMPONENTS /* Components */,
+				F412 /* AboutView.swift */,
+				F408 /* ArrivalAlertView.swift */,
+				F401 /* HomeView.swift */,
+				F411 /* LaunchView.swift */,
+				F403 /* MapViews.swift */,
+				F404 /* SettingsView.swift */,
+				F405 /* RouteListPanel.swift */,
+				F406 /* RouteSelectionMapView.swift */,
+				F407 /* SwipeableTransportModeSelector.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		VIEWSCOMPONENTS /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F409 /* ButtonStyles.swift */,
+				F410 /* AppBrandView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0412BA832F0ECD360012B4F6 /* TripActivityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0412BA952F0ECD380012B4F6 /* Build configuration list for PBXNativeTarget "TripActivityWidgetExtension" */;
+			buildPhases = (
+				0412BA802F0ECD360012B4F6 /* Sources */,
+				0412BA812F0ECD360012B4F6 /* Frameworks */,
+				0412BA822F0ECD360012B4F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0412BA872F0ECD360012B4F6 /* TripActivityWidget */,
+			);
+			name = TripActivityWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = TripActivityWidgetExtension;
+			productReference = 0412BA842F0ECD360012B4F6 /* TripActivityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		TARGET /* SmartArrivalAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = TARGETCONFIGS /* Build configuration list for PBXNativeTarget "SmartArrivalAlert" */;
+			buildPhases = (
+				SOURCES /* Sources */,
+				FRAMEWORKS /* Frameworks */,
+				RESOURCES /* Resources */,
+				040CAA262F0D189900F7D78C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0412BA902F0ECD380012B4F6 /* PBXTargetDependency */,
+			);
+			name = SmartArrivalAlert;
+			productName = SmartArrivalAlert;
+			productReference = P001 /* SmartArrivalAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0412BA832F0ECD360012B4F6 = {
+						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
+					};
+					TARGET = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = PROJECTCONFIGS /* Build configuration list for PBXProject "SmartArrivalAlert" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = ROOT;
+			packageReferences = (
+			);
+			productRefGroup = PRODUCTS /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TARGET /* SmartArrivalAlert */,
+				0412BA832F0ECD360012B4F6 /* TripActivityWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0412BA822F0ECD360012B4F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		RESOURCES /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				R001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0412BA802F0ECD360012B4F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SOURCES /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				M001 /* Location.swift in Sources */,
+				M002 /* MonitoringStatus.swift in Sources */,
+				M003 /* RiskAssessment.swift in Sources */,
+				M004 /* SignalQuality.swift in Sources */,
+				M005 /* StorageKeys.swift in Sources */,
+				M006 /* TripRecord.swift in Sources */,
+				M007 /* UserSettings.swift in Sources */,
+				M008 /* MapModels.swift in Sources */,
+				M009 /* TransportMode.swift in Sources */,
+				M010 /* GeofenceRadiusConfig.swift in Sources */,
+				M011 /* BatteryMode.swift in Sources */,
+				M012 /* RouteModels.swift in Sources */,
+				M013 /* AlertModels.swift in Sources */,
+				S001 /* AlertTrigger.swift in Sources */,
+				S021 /* AlertSoundPlayer.swift in Sources */,
+				S022 /* AlertHapticEngine.swift in Sources */,
+				S023 /* SnoozeTimer.swift in Sources */,
+				S024 /* AlertManager.swift in Sources */,
+				S025 /* BatteryMonitor.swift in Sources */,
+				S002 /* DataExportService.swift in Sources */,
+				S003 /* LearningEngine.swift in Sources */,
+				S004 /* LocalStorageAdapter.swift in Sources */,
+				S005 /* LocationRepository.swift in Sources */,
+				S006 /* LocationSearchService.swift in Sources */,
+				S007 /* MonitoringEngine.swift in Sources */,
+				S008 /* SelfDiagnosisEngine.swift in Sources */,
+				S009 /* SignalQualityRepository.swift in Sources */,
+				S010 /* TripRepository.swift in Sources */,
+				S011 /* GeocodingService.swift in Sources */,
+				S012 /* ETACalculator.swift in Sources */,
+				S013 /* MapStyleManager.swift in Sources */,
+				S014 /* LocationCheckIntervalManager.swift in Sources */,
+				S015 /* SpeedCalculator.swift in Sources */,
+				S016 /* EnhancedETACalculator.swift in Sources */,
+				S017 /* SettingsStore.swift in Sources */,
+				S018 /* LiveActivityManager.swift in Sources */,
+				S019 /* RouteETAService.swift in Sources */,
+				S020 /* RefreshIntervalCalculator.swift in Sources */,
+				U001 /* GeoUtils.swift in Sources */,
+				U002 /* SignalQualityEvaluator.swift in Sources */,
+				V001 /* HomeViewModel.swift in Sources */,
+				V002 /* MapViewModel.swift in Sources */,
+				W001 /* HomeView.swift in Sources */,
+				W003 /* MapViews.swift in Sources */,
+				W004 /* SettingsView.swift in Sources */,
+				W005 /* RouteListPanel.swift in Sources */,
+				W006 /* RouteSelectionMapView.swift in Sources */,
+				W007 /* SwipeableTransportModeSelector.swift in Sources */,
+				U003 /* TransportModeSwipeHandler.swift in Sources */,
+				U004 /* RouteValidator.swift in Sources */,
+				V003 /* RouteSelectionViewModel.swift in Sources */,
+				V004 /* AlertViewModel.swift in Sources */,
+				W008 /* ArrivalAlertView.swift in Sources */,
+				W009 /* ButtonStyles.swift in Sources */,
+				W010 /* AppBrandView.swift in Sources */,
+				W011 /* LaunchView.swift in Sources */,
+				W012 /* AboutView.swift in Sources */,
+				S026 /* HapticManager.swift in Sources */,
+				U005 /* AnimationConstants.swift in Sources */,
+				A001 /* SmartArrivalAlertApp.swift in Sources */,
+				A002 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0412BA902F0ECD380012B4F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0412BA832F0ECD360012B4F6 /* TripActivityWidgetExtension */;
+			targetProxy = 0412BA8F2F0ECD380012B4F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0412BA922F0ECD380012B4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZV67RM8BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartarrivalalert.app.TripActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0412BA932F0ECD380012B4F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZV67RM8BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TripActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TripActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartarrivalalert.app.TripActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEBUG_PROJECT /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEBUG_TARGET /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZV67RM8BY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SmartArrivalAlert/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "到站提醒";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartarrivalalert.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		RELEASE_PROJECT /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		RELEASE_TARGET /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZV67RM8BY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SmartArrivalAlert/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "到站提醒";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartarrivalalert.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0412BA952F0ECD380012B4F6 /* Build configuration list for PBXNativeTarget "TripActivityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0412BA922F0ECD380012B4F6 /* Debug */,
+				0412BA932F0ECD380012B4F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		PROJECTCONFIGS /* Build configuration list for PBXProject "SmartArrivalAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_PROJECT /* Debug */,
+				RELEASE_PROJECT /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		TARGETCONFIGS /* Build configuration list for PBXNativeTarget "SmartArrivalAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBUG_TARGET /* Debug */,
+				RELEASE_TARGET /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJECT /* Project object */;
+}
