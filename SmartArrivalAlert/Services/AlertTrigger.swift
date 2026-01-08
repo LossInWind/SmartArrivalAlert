@@ -268,9 +268,9 @@ actor AlertTrigger: AlertTriggerProtocol {
     /// - Returns: 是否获得权限
     func requestNotificationPermission() async -> Bool {
         do {
-            // 请求 Time Sensitive 权限，可以突破专注模式
+            // 请求通知权限（criticalAlert 需要特殊授权）
             let granted = try await notificationCenter.requestAuthorization(
-                options: [.alert, .sound, .badge, .criticalAlert, .timeSensitive]
+                options: [.alert, .sound, .badge]
             )
             return granted
         } catch {

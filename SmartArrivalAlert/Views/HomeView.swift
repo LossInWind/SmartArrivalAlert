@@ -741,7 +741,7 @@ struct MonitoringView: View {
                     HStack(spacing: 24) {
                         // 距离（优先使用路线距离）
                         VStack(spacing: 4) {
-                            if let routeDistance = viewModel.selectedRoute?.distance {
+                            if viewModel.selectedRoute?.distance != nil {
                                 Text(viewModel.selectedRoute?.distanceText ?? "--")
                                     .font(.system(size: 28, weight: .light, design: .rounded))
                                     .foregroundStyle(isInsideGeofence ? .green : .blue)

@@ -31,11 +31,11 @@ final class AlertViewModel: ObservableObject {
     // MARK: - Initialization
     
     init(
-        alertManager: AlertManager = .shared,
-        snoozeTimer: SnoozeTimer = .shared
+        alertManager: AlertManager? = nil,
+        snoozeTimer: SnoozeTimer? = nil
     ) {
-        self.alertManager = alertManager
-        self.snoozeTimer = snoozeTimer
+        self.alertManager = alertManager ?? AlertManager.shared
+        self.snoozeTimer = snoozeTimer ?? SnoozeTimer.shared
         
         setupBindings()
     }
