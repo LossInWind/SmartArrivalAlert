@@ -1400,27 +1400,86 @@ struct RiskDetailRow: View {
 /// 反馈弹窗
 struct FeedbackSheet: View {
     @ObservedObject var viewModel: HomeViewModel
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("提醒及时吗？")
-                .font(.headline)
+        VStack(spacing: 0) {
+            // 顶部拖拽指示器
+            Capsule()
+                .fill(Color.secondary.opacity(0.3))
+                .frame(width: 36, height: 4)
+                .padding(.top, 8)
+                .padding(.bottom, 20)
             
-            HStack(spacing: 16) {
-                FeedbackButton(title: "及时 👍", color: .green) {
+            // 标题
+            Text("提醒及时吗？")
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(.primary)
+                .padding(.bottom, 24)
+            
+            // 反馈选项
+            HStack(spacing: 12) {
+                FeedbackOptionButton(
+                    icon: "checkmark.circle.fill",
+                    title: "及时",
+                    color: .green
+                ) {
                     Task { await viewModel.recordFeedback(.success) }
+                    dismiss()
                 }
                 
-                FeedbackButton(title: "漏响 😢", color: .red) {
-                    Task { await viewModel.recordFeedback(.missed) }
-                }
-                
-                FeedbackButton(title: "晚了 😅", color: .orange) {
+                FeedbackOptionButton(
+                    icon: "clock.fill",
+                    title: "晚了",
+                    color: .orange
+                ) {
                     Task { await viewModel.recordFeedback(.late) }
+                    dismiss()
+                }
+                
+                FeedbackOptionButton(
+                    icon: "xmark.circle.fill",
+                    title: "漏响",
+                    color: .red
+                ) {
+                    Task { await viewModel.recordFeedback(.missed) }
+                    dismiss()
                 }
             }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 16)
         }
-        .padding()
+        .background(Color(.systemBackground))
+    }
+}
+
+/// 反馈选项按钮
+struct FeedbackOptionButton: View {
+    let icon: String
+    let title: String
+    let color: Color
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: {
+            HapticManager.shared.trigger(.selection)
+            action()
+        }) {
+            VStack(spacing: 8) {
+                Image(systemName: icon)
+                    .font(.system(size: 28))
+                    .foregroundStyle(color)
+                
+                Text(title)
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(.primary)
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 16)
+            .background(color.opacity(0.08))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+        }
+        .buttonStyle(.pressable)
     }
 }
 

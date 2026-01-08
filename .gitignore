@@ -38,8 +38,8 @@ fastlane/test_output
 # Code Injection
 iOSInjectionProject/
 
-# Kiro specs (optional - remove if you want to include)
-# .kiro/
+# Kiro IDE
+.kiro/
 
 # macOS
 .DS_Store
