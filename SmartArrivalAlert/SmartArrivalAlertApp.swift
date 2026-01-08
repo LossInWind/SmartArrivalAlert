@@ -53,7 +53,6 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     /// 用户点击通知时的处理
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let categoryId = response.notification.request.content.categoryIdentifier
-        let actionId = response.actionIdentifier
         
         // 处理兜底闹钟通知
         if categoryId == AlertTrigger.backupAlarmCategoryId {
