@@ -5,7 +5,7 @@ struct AboutView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var showTutorial = false
     
-    private let githubURL = "https://github.com/user/arrival-alert"
+    private let githubURL = "https://github.com/LossInWind/SmartArrivalAlert"
     private let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
     private let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
     
